@@ -1,0 +1,17 @@
+### GET KNOWN User with API Key
+GET http://localhost:8080/v1/users
+Authorization: ApiKey 5fc83d671c2fa59f7b29816759e52493f1b60e6fbb54380fa8dbecc1e23bd3a7
+Accept: application/json    
+
+
+## Create new User
+# ### POST KNOWN User with API Key
+# POST http://localhost:8080/v1/users
+# Content-Type: application/json
+# Accept: application/json
+
+# {
+
+#     "name": "John Doe",
+
+# }
