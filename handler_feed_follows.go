@@ -11,7 +11,7 @@ import (
 	"github.com/google/uuid"
 )
 
-func (apiCfg *apiConfig) handlerCreateFeed(w http.ResponseWriter, r *http.Request, user database.User) {
+func (apiCfg *apiConfig) handlerCreateFollowFeed(w http.ResponseWriter, r *http.Request, user database.User) {
 
 	type parameters struct {
 		Name string `json:"name"`
@@ -44,7 +44,7 @@ func (apiCfg *apiConfig) handlerCreateFeed(w http.ResponseWriter, r *http.Reques
 
 //getAPIKey(r.Header)
 
-func (apiCfg *apiConfig) handlerGetFeeds(w http.ResponseWriter, r *http.Request) {
+func (apiCfg *apiConfig) handlerGetFollowFeeds(w http.ResponseWriter, r *http.Request) {
 
 	feeds, err := apiCfg.DB.GetFeeds(r.Context())
 	if err != nil {
